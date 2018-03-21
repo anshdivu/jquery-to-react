@@ -9,7 +9,7 @@ class IconButton extends React.Component {
   };
 
   render() {
-    const {disabled, buttonText, faIcon, reverseIcon} = this.props;
+    const {disabled, buttonText, faIcon, iconPosition} = this.props;
     const iconClass = 'fa ' + faIcon;
 
     const disabledStyle = {
@@ -27,7 +27,7 @@ class IconButton extends React.Component {
         className={`button is-info is-rounded`}
         style={disabled ? disabledStyle : {}}
       >
-        {reverseIcon ? [icon, text] : [text, icon] }
+        {iconPosition === 'left' ? [icon, text] : [text, icon] }
       </a>
     );
   }

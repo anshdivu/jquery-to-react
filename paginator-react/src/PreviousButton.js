@@ -14,7 +14,7 @@ class PreviousButton extends React.Component {
         faIcon='fa-chevron-left'
         disabled={this.isDisabled(this.props)}
         buttonText='Prev'
-        reverseIcon='true' />
+        iconPosition='left' />
     );
   }
 }
